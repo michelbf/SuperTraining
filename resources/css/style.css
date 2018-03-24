@@ -1,0 +1,99 @@
+/*
+--------------------
+--------------------
+BASIC SETUP
+--------------------
+--------------------
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: #575454;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/*
+--------------------
+--------------------
+REUSABLES
+--------------------
+--------------------
+*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1 {
+    letter-spacing: 1px;
+    font-weight: 300;    
+    font-size: 230%;
+}
+
+/*
+--------------------
+--------------------
+HEADER
+--------------------
+--------------------
+*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)), url("../img/hero_img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+}
+
+.main-nav {
+    margin-top: 30px;
+    list-style: none;
+    float: right;
+}
+
+.main-nav li {
+    display: inline-flex;
+    color: #e2e2e2;
+    font-size: 110%;
+    margin-right: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+.hero-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+    widows: 1140px;
+}
+
+.hero-box h1 {
+    color: #e2e2e2;
+}
+
+
+
+

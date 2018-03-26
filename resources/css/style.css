@@ -1,3 +1,11 @@
+
+
+/*
+light blue: #3498db;
+dark blue: #2980b9;
+*/
+
+
 /*
 --------------------
 --------------------
@@ -49,10 +57,80 @@ h1 {
     font-size: 230%;
 }
 
+h2 {
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h2:after {
+    margin: 20px auto 0 auto;
+    height: 5px;
+    width: 130px;
+    content: "  ";
+    background-color: #3498db;
+    display: block;
+}
+
+h3 {
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 400;
+
+}
+
+section {
+    padding-top: 55px;
+}
+
+.long-copy {
+    line-height: 140%;
+    margin-bottom: 40px;
+}
+
+.button:link,
+.button:visited {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    border: 1px solid #fff;
+    border-radius: 500px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #3498db;
+    transition: background-color 0.3s;
+    transition: border-color 0.3s;
+}
+
+.button:hover,
+.button:active {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+.button.btn-transparent:link, 
+.button.btn-transparent:visited {
+    background-color: transparent;
+    color: #3498db;
+    border-color: #3498db;
+    transition: background-color 0.3s;
+    transition: border-color 0.3s;
+    transition: color 0.3s;
+}
+
+.button.btn-transparent:hover, 
+.button.btn-transparent:active {
+    background-color: #2980b9;
+    color: #fff;
+    border-color: #2980b9;
+}
+
+
 /*
 --------------------
 --------------------
-HEADER
+HEADER SECTION
 --------------------
 --------------------
 */
@@ -75,8 +153,8 @@ header {
 .main-nav li {
     display: inline-flex;
     color: #e2e2e2;
-    font-size: 110%;
-    margin-right: 30px;
+    font-size: 105%;
+    margin-right: 20px;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -93,6 +171,199 @@ header {
 .hero-box h1 {
     color: #e2e2e2;
 }
+
+
+.main-nav a:link,
+.main-nav a:visited {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 7px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+    border-color: #3498db;
+}
+
+
+
+/*
+--------------------
+--------------------
+FEATURES SECTION
+--------------------
+--------------------
+*/
+
+i {
+    color: #3498db;
+    font-size: 250%;    
+}
+
+
+/*
+--------------------
+--------------------
+COURSES SECTION
+--------------------
+--------------------
+*/
+
+.section-courses  {
+    padding: 0;
+    margin: 0;
+}
+
+.section-courses ul {
+    list-style: none;
+    width: 100%;
+}
+
+.section-courses li {
+    display: table-cell;
+    width: 25%;
+    float: left;    
+    padding: 0;
+    margin: 0;
+}
+
+.section-courses figure {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.section-courses img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.02);
+    transition: transform 0.5s, opacity 0.5s
+}
+
+.section-courses img:hover {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    transform: scale(1.12);
+}
+
+
+/*
+--------------------
+--------------------
+STEPS SECTION
+--------------------
+--------------------
+*/
+
+.section-howitworks {
+    background-color: #e6e6e6;
+}
+
+.section-howitworks div:last-child {
+    padding-bottom: 20px;
+}
+
+.howto-box:first-child {
+    text-align: right;
+}
+
+.howto-box:last-child {
+    padding-top: 70px;
+}
+
+.steps {
+    margin-bottom: 40px;
+}
+
+.steps div {
+    color: #2980b9;
+    border: 1px solid #2980b9;
+    border-radius: 500px;
+    width: 50px;
+    height: 50px;
+    font-size: 180%;
+    padding-top: 2px;
+    text-align: center;
+    margin-right: 15px;
+    display: inline-block;
+    float: left;
+}
+
+.steps p {
+    font-size: 110%;
+    line-height: 130%;
+}
+
+.device-buttons {
+    padding-top: 10px;
+}
+
+.device-buttons img {
+    width: 150px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+
+/*
+--------------------
+--------------------
+TESTIMONIALS SECTION
+--------------------
+--------------------
+*/
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url("../img/circuit-board-computing-cpu-50711.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+blockquote {
+    font-size: 110%;
+    line-height: 135%;
+    margin-top: 20px;
+    position: relative;
+}
+
+blockquote p {
+    display: block;
+    min-height: 160px;
+}
+
+blockquote:before {
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -8px;
+}
+
+blockquote cite img {
+    width: 25%;
+    height: auto;
+    border-radius: 500px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+blockquote cite {
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 90%;
+    
+}
+
+
 
 
 

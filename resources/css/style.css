@@ -92,6 +92,7 @@ section {
 .button:link,
 .button:visited {
     text-decoration: none;
+    font-weight: 700;
     color: #fff;
     margin: 0 15px;
     border: 1px solid #fff;
@@ -197,6 +198,10 @@ FEATURES SECTION
 --------------------
 */
 
+.section-features {
+    background-color: #d6d6d6;
+}
+
 i {
     color: #3498db;
     font-size: 250%;    
@@ -262,7 +267,7 @@ STEPS SECTION
 */
 
 .section-howitworks {
-    background-color: #e6e6e6;
+    background-color: #fff;
 }
 
 .section-howitworks div:last-child {
@@ -365,6 +370,67 @@ blockquote cite {
 
 
 
+/*
+--------------------
+--------------------
+PLANS SECTION
+--------------------
+--------------------
+*/
+
+.section-signup {
+    background-color: #d6d6d6;
+}
+
+.plan-description {
+    background-color: #fff;
+    margin: 18px 0 18px 10px;
+    box-shadow: 0 2px 2px #9b9b9b;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.plan-description a {
+    display: inline-block;
+}
+
+.plan-description .plan-price {
+    font-size: 200%;
+    color: #2980b9;
+}
+
+.plan-description span {
+    font-size: 60%;
+}
 
 
+.plan-description ul {
+    list-style: none;
+    margin: 10px 0;
+}
 
+.plan-description li {
+    font-size: 100%;
+    line-height: 150%;
+    
+}
+
+.plan-description i {
+    color: #2980b9;
+    font-size: 90%;
+    padding-right: 10px;
+}
+
+.plan-description i.ion-close {
+    color: #db0606;
+}
+
+.plan-description div {
+    padding: 15px;
+    border-bottom: 2px solid #c9c9c9;
+}
+
+.plan-description div:last-child {
+    padding: 15px;
+    border-bottom: 0px solid #c9c9c9;
+}

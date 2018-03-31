@@ -26,6 +26,7 @@ body {
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -176,9 +177,10 @@ header {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%,-65%);
-    transform: translate(-50%,-65%);
-    widows: 1140px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 1140px;
+    margin-left: 20px;
 }
 
 .hero-box h1 {
@@ -237,6 +239,7 @@ COURSES SECTION
 .section-courses ul {
     list-style: none;
     width: 100%;
+    
 }
 
 .section-courses li {
@@ -259,8 +262,8 @@ COURSES SECTION
     width: 100%;
     height: auto;
     opacity: 0.7;
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
     -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
@@ -466,9 +469,11 @@ FORM SECTION
 */
 
 .contact-form {
-    width: 45%;
+    width: 55%;
     margin: 0 auto;
 }
+
+
 
 input[type="text"],
 input[type="email"],
@@ -483,10 +488,11 @@ select {
 
 textarea {
     height: 200px;
+
 }
 
 input[type="checkbox"] {
-    margin: 5px 10px 5px 2px;
+    margin: 5px 5px ;
 }
 
 *:focus {

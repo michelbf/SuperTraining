@@ -12,32 +12,49 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
     
     <title>SuperTraining</title>
+    
+<!--
+    FAVICON Credits:
+    Book by Nick Dominguez from the Noun Project, used under Creative Commons License (https://thenounproject.com)
+-->
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="resources/favicon/favicon-16x16.png">
+    <link rel="manifest" href="resources/favicon/site.webmanifest">
+    <link rel="mask-icon" href="resources/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="resources/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="resources/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+
 </head>
 <body>
    <header>
        <nav>
            <div class="row">
-               <ul class="main-nav">
-                   <li><a href="">Features</a></li>
-                   <li><a href="">How it Works</a></li>
-                   <li><a href="">Testimonials</a></li>
-                   <li><a href="">Sign up</a></li>
+               <ul class="main-nav js--main-nav">
+                   <li><a href="#features">Features</a></li>
+                   <li><a href="#steps">How it Works</a></li>
+                   <li><a href="#testimonials">Testimonials</a></li>
+                   <li><a href="#signup">Sign up</a></li>
                </ul>
+               <a class="mobile-nav-link"><i class="mobile-nav ion-navicon-round"></i></a>
            </div>
        </nav>
        <div class="hero-box">
            <h1>The future of your career starts here.<br> The best training available anywhere.</h1>
-           <a href="#" class="button">Start learning!</a>
-           <a href="#" class="button btn-transparent">Show me more</a>
+           <a href="#" class="button js--scroll-to-plans">Start learning!</a>
+           <a href="#" class="button btn-transparent js--scroll-to-features">Show me more</a>
        </div>
    </header>
    
-   <section class="section-features">
+   <section class="section-features js--section-features" id="features">
         <div class="row">
             <h2>Out of your comfort zone – into new territory!</h2>
             <p class="long-copy">Hello, we’re SuperTraining, and we are here for all your learning needs. Whether you are a seasoned professional looking to hone your skills or someone who is desperately looking to change careers, you can find what you are looking for here. We know time is essential, and that you are very busy, so let us do the hard part of curating high-quality content and you can focus on the learning!</p>
         </div>       
-        <div class="row">
+        <div class="row js--waypoint-scroll-animation">
             <div class="col span-1-of-4">
                 <i class="ion-android-done-all"></i>
                 <h3>Easy Access</h3>
@@ -78,7 +95,7 @@
    </section>
    <div class="clearfix"></div>
    
-   <section class="section-howitworks">
+   <section class="section-howitworks js--howitworks" id="steps">
         <div class="row">
             <h2>How it works – Easy and painless</h2>
        </div>              
@@ -107,7 +124,7 @@
        </div>
    </section>
    
-   <section class="section-testimonials">
+   <section class="section-testimonials" id="testimonials">
         <div class="row">
             <h2>Success stories from some of our subscribers</h2>
        </div> 
@@ -133,13 +150,13 @@
        </div>       
    </section>
    
-   <section class="section-signup">
+   <section class="section-signup js--signup" id="signup">
        <div class="row">
            <h2>Start learning today</h2>
        </div>
        <div class="row">
            <div class="col span-1-of-3">
-               <div class="plan-description">
+               <div class="plan-description js--premium-plan">
                    <div>
                        <h3>Premium</h3>
                        <p class="plan-price">$39.00<span> / month</span></p>
@@ -294,4 +311,27 @@
     </footer>
     
 </body>
+
+<!--JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--Compatibility for Media Queries for older browsers-->
+<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+
+<!--The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5 styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.   -->
+<script src="https://cdn.jsdelivr.net/npm/html5shiv.min.js@3.7.2/html5shiv.min.js"></script>
+
+<!--selectivizr is a JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8.-->
+<script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+
+<!--Waypoint plugin-->
+<script src="vendors/js/jquery.waypoints.min.js"></script>
+
+<!--Animate.css-->
+<link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    
+<!--My JS file-->
+<script src="resources/js/script.js"></script>
+
 </html>

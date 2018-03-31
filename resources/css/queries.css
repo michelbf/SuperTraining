@@ -24,6 +24,10 @@
     blockquote cite {
         padding-top: 0;
     }
+    
+    .sticky .main-nav {
+        margin: 6px 0;
+    }
 }
 
 /* ---------------------------------*/
@@ -87,6 +91,42 @@
     
     .iPhone-img {
         width: 110%;
+    }
+    
+    
+    .main-nav {
+        float: left;
+        margin-top: 10px;
+        margin-left: 55px;
+        display: none;
+    }
+    
+    
+    
+    .main-nav li {
+        display: block;
+        margin-bottom: 7px;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        color: #fff;
+        padding-bottom: 2px;
+        font-size: 120%;
+        
+    }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        margin-right: 35px;
+        padding-bottom: 1px;
+        
+    }
+
+    
+    .mobile-nav-link {
+        display: block;
+     
     }
     
 }
@@ -182,8 +222,45 @@
         margin: 0;
     }
     
+    .sticky .main-nav {
+        float: left;
+        margin-top: 10px;
+        margin-left: 25px;
+    }
+    
     .main-nav {
+        float: left;
+        margin-top: 10px;
+        margin-left: 55px;
         display: none;
+    }
+    
+    
+    
+    .main-nav li {
+        display: block;
+        margin-bottom: 7px;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        color: #fff;
+        padding-bottom: 2px;
+        font-size: 120%;
+        
+    }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        margin-right: 35px;
+        padding-bottom: 1px;
+        
+    }
+
+    
+    .mobile-nav-link {
+        display: block;
+     
     }
     
 }

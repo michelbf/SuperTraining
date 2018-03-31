@@ -156,7 +156,7 @@ header {
 }
 
 .main-nav {
-    margin-top: 30px;
+    margin: 10px 0;
     list-style: none;
     float: right;
 }
@@ -204,6 +204,55 @@ header {
 }
 
 
+/* STICKY NAV: */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    z-index: 1000000000;
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+
+
+.sticky .main-nav li {
+    color: #4d4c4c;
+    font-size: 90%;
+}
+
+.sticky .main-nav a:link,
+.sticky .main-nav a:visited {
+    color: #4d4c4c;
+    padding-bottom: 5px;
+}
+
+.sticky .main-nav a:hover,
+.sticky .main-nav a:active {
+    border-color: #4d4c4c;
+}
+
+
+/* MOBILE NAV */
+.mobile-nav-link {
+    float: right;
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mobile-nav-link i {
+    color: #fff;
+    cursor: pointer;
+}
+
+.sticky .mobile-nav-link i {
+    color: #4d4c4c;
+}
+
+
 
 /*
 --------------------
@@ -216,6 +265,7 @@ FEATURES SECTION
 .section-features {
     background-color: #d6d6d6;
 }
+
 
 i {
     color: #3498db;
@@ -544,3 +594,36 @@ footer a {
     text-decoration: none;
 }
 
+
+/*
+--------------------
+--------------------
+ANIMATIONS
+--------------------
+--------------------
+*/
+
+
+.js--waypoint-scroll-animation {
+    visibility: hidden;
+}
+
+.js--waypoint-scroll-animation.animated{
+    visibility: visible;
+}
+
+
+.iPhone-img {
+    visibility: hidden;
+}
+
+.iPhone-img.animated {
+    visibility: visible;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+}
+
+.js--premium-plan {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
